@@ -1,0 +1,151 @@
+/* App.css */
+
+/* Resetowanie domyślnych stylów */
+body, h1, h2, p, select, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Główne tło aplikacji */
+  body {
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Kontener aplikacji */
+  .AppW {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Nagłówek aplikacji */
+  .AppW h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #027cff;
+    text-align: center;
+  }
+  
+  /* Kontener danych wizyty */
+  .dataW {
+    margin-top: 20px;
+  }
+  
+  /* Stylizacja tekstu pacjenta i lekarza */
+  .dataW h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  .dataW p {
+    margin: 5px 0;
+  }
+
+  .deleteW {
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 5px 8px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 18px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #cb241c;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s; /* Animacje */
+  }
+  
+  .updateW {
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 5px 8px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 18px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #1e6ef0;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s; /* Animacje */
+  }
+  
+  .receptaW{
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 5px 8px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 18px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #4CAF50;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .receptaW:hover {
+    background-color: #45a049;       /* Zmiana koloru tła przy najechaniu */
+    transform: scale(1.05); 
+  }
+  
+  /* Stylizacja linków */
+  a {
+    text-decoration: none;
+  }
+  
+  a button {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  
+  /* Stylizacja rozwijanego menu */
+  select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1em;
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  select option {
+    padding: 10px;
+  }
+  
+  /* Stylizacja kontenerów przycisków i formularzy */
+  .form-toggle, .forms-container, .zapisz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-toggle button {
+    margin-bottom: 10px;
+  }
+  
+  .zapisz button {
+    width: 100%;
+    max-width: 200px;
+  }
+  

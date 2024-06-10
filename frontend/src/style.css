@@ -1,0 +1,160 @@
+body, h1, h2, p, select, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Główne tło aplikacji */
+  body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+.App { 
+    display: flex;
+    flex-direction: column; /* Ustawienie na kolumnę, aby elementy były pionowo wyrównane */
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    height: 30vh;
+  }
+
+.home h1{
+    color:white;
+    margin:20px 5px 30px 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pacjent{
+    flex:1;
+    display: flex;   
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border : 2px solid lightcoral;
+    margin: 10px 0 ; 
+    border-radius: 10px;
+}
+
+.lekarze{
+    flex:1;
+    display: flex;   
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border : 2px solid lightcoral;
+    margin: 10px 0 ; 
+    border-radius: 10px;
+}
+.delete{
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 5px 8px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 18px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #cb241c;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s; /* Animacje */
+
+}
+
+.update{
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 5px 8px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 18px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #1e6ef0;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s; /* Animacje */
+}
+.recepta{
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 5px 8px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 18px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #4CAF50;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s; /* Animacje */
+}
+.recepta:hover {
+    background-color: #45a049;       /* Zmiana koloru tła przy najechaniu */
+    transform: scale(1.05);          /* Powiększenie przy najechaniu */
+  }
+
+  .form-toggle {
+    margin-bottom: 20px;
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10vh;
+}
+
+.form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid rgb(86, 157, 233);
+}
+
+.formButton {
+    margin-top: 20px;
+    padding: 10px 50px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* styles.css */
+.dodajButton {
+    display: inline-block;           /* Wyświetla jako blok w linii */
+    padding: 15px 30px;              /* Wewnętrzny odstęp (top/bottom, left/right) */
+    font-size: 20px;                 /* Rozmiar czcionki */
+    color: white;                    /* Kolor tekstu */
+    background-color: #4CAF50;       /* Kolor tła */
+    border: none;                    /* Bez obramowania */
+    border-radius: 8px;              /* Zaokrąglone rogi */
+    cursor: pointer;                 /* Kursor zmienia się na rękę */
+    text-decoration: none;           /* Brak podkreślenia */
+    text-align: center;              /* Wyrównanie tekstu */
+    transition: background-color 0.3s, transform 0.3s; /* Animacje */
+  }
+  
+  .dodajButton:hover {
+    background-color: #45a049;       /* Zmiana koloru tła przy najechaniu */
+    transform: scale(1.05);          /* Powiększenie przy najechaniu */
+  }
+  
+  .dodajButton:active {
+    background-color: #388e3c;       /* Kolor tła po kliknięciu */
+    transform: scale(1);             /* Przywrócenie rozmiaru po kliknięciu */
+  }
+  .zapisz{
+    display: column;
+  }
+  .container{
+    height: 92vh;
+  }
